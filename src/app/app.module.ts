@@ -3,14 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+
+import { AngularCommonsModule } from './layouts/angular-commons.module';
+import { ComponentsModule } from './components/components.module';
+import { PagesModule } from './pages/pages.module';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ComponentsModule,
+    AngularCommonsModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
